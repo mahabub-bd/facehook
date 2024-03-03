@@ -3,7 +3,7 @@ import React from "react";
 export default function Field({ label, children, htmlFor, error }) {
   const id = htmlFor || getChildId(children);
   return (
-    <div>
+    <div className="form-control">
       {label && (
         <label htmlFor={id} className="auth-label">
           {label}
@@ -11,7 +11,7 @@ export default function Field({ label, children, htmlFor, error }) {
       )}
       {children}
       {!!error && (
-        <div role="alert" className="text-red-600">
+        <div role="alert" className="text-rose-600">
           {error.message}
         </div>
       )}
