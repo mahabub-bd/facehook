@@ -1,5 +1,4 @@
 import { Route, Routes } from "react-router-dom";
-import { useAuth } from "./hooks";
 import {
   HomePage,
   LoginPage,
@@ -10,8 +9,6 @@ import {
 import PrivateRoutes from "./routes/PrivateRoutes";
 
 export default function App() {
-  const { auth } = useAuth();
-
   return (
     <>
       <Routes>
