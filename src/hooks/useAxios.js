@@ -61,4 +61,4 @@ const useAxios = () => {
   return { api };
 };
 
-export default useAxios;
+export { useAxios };
