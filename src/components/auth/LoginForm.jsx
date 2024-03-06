@@ -33,7 +33,7 @@ const LoginForm = () => {
         }
       }
     } catch (error) {
-      console.log(error);
+      console.error(error);
       setError("root.random", {
         type: "random",
         message: `User with email ${formData.email} is not found`,

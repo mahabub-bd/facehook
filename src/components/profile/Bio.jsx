@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { actions } from "../../actions";
+import { api } from "../../api";
 import { CheckedIcon, EditIcon } from "../../constants/image";
 import { useProfile } from "../../hooks";
 
@@ -10,7 +11,24 @@ const Bio = () => {
   const handleBioEdit = async () => {
     dispatch({ type: actions.profile.DATA_FETCHING });
     try {
-    } catch (error) {}
+      const response = await api.patch(
+        `${import.meta.env.VITE_SERVER_BASE_URL}/profile/${state?.user?.id}`,
+        { bio }
+      );
+      if (response.status === 200) {
+        dispatch({
+          type: actions.profile.USER_DATA_EDITED,
+          data: response.data,
+        });
+      }
+      setEditMode(false);
+    } catch (error) {
+      console.error(error);
+      dispatch({
+        type: actions.profile.DATA_FETCH_ERROR,
+        error: error.message,
+      });
+    }
   };
 
   return (
@@ -25,7 +43,7 @@ const Bio = () => {
             value={bio}
             onChange={(e) => setBio(e.target.value)}
             rows={3}
-            cols={105}
+            cols={80}
             className="p-4 mx-auto leading-[188%] text-gray-300  card bg-gray-800 lg:lext-lg rounded-md"
           />
         )}
