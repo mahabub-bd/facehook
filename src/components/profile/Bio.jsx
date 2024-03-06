@@ -24,9 +24,9 @@ const Bio = () => {
           <textarea
             value={bio}
             onChange={(e) => setBio(e.target.value)}
-            rows={4}
-            cols={55}
-            className="p-2 leading-[188%] text-gray-600 lg:lext-lg rounded-md"
+            rows={3}
+            cols={105}
+            className="p-4 mx-auto leading-[188%] text-gray-300  card bg-gray-800 lg:lext-lg rounded-md"
           />
         )}
       </div>
