@@ -1,3 +1,5 @@
 import { AuthProvider } from "./AuthProvider";
 
-export { AuthProvider };
+import { ProfileProvider } from "./ProfileProvider";
+
+export { AuthProvider, ProfileProvider };
