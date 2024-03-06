@@ -1,6 +1,6 @@
 import { CommentIcon, LikeIcon, ShareIcon } from "../../constants/image";
 
-export default function PostAction() {
+export default function PostAction({ postId, commentCount }) {
   return (
     <div className="flex items-center justify-between py-6 lg:px-10 lg:py-8">
       {/* <!-- Like Button --> */}
@@ -12,7 +12,7 @@ export default function PostAction() {
       {/* <!-- Comment Button --> */}
       <button className="icon-btn space-x-2 px-6 py-3 text-xs lg:px-12 lg:text-sm">
         <img src={CommentIcon} alt="Comment" />
-        <span>Comment(2)</span>
+        <span>{`Comment  ( ${commentCount ?? 0} )`}</span>
       </button>
       {/* <!-- Share Button -->
 

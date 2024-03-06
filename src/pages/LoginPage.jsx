@@ -27,6 +27,7 @@ export default function LoginPage() {
           {/* <!-- illustration and title ends -->
     <!-- login form --> */}
           <div className="card">
+            <h1 className="text-center text-2xl font-bold py-3">Log in</h1>
             <LoginForm />
             <div className="py-4 lg:py-6 ">
               <p className="text-center text-xs text-gray-600/95 lg:text-sm ">

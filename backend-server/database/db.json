@@ -469,9 +469,9 @@
       "password": "$2b$08$t5Aar/0hgHTMdCeLtn3KhOlWDVIAHcFUTkRPeWASPhbYAea5kxKvW",
       "firstName": "Saad",
       "lastName": "Hasan",
-      "avatar": "uploads/avatar/avatar-1709713640378-558927110.png",
+      "avatar": "uploads/avatar/avatar-1709731011135-716561379.jpeg",
       "email": "saadh392@mail.com",
-      "bio": "Mahabub is an excellent member of LWS who keeps himself updated with technology and stays relevant. He is a tech enthusiast and does not hesitate to help developers in bangladesh"
+      "bio": "Mahabub Hossain is an excellent member of LWS who keeps himself updated with technology and stays relevant. He is a tech enthusiast and does not hesitate to help developers in bangladesh"
     },
     {
       "id": "1aeef0f0-77ba-456b-8b5b-d4145a9b5410",
@@ -514,6 +514,30 @@
       "avatar": "uploads/avatar/avatar-1708802845791-219561000.png",
       "email": "rambo@email.com",
       "bio": "I am Rambo!!!"
+    },
+    {
+      "id": "aaec2ec1-71c2-4ca0-8eac-dfee614639bf",
+      "password": "$2b$08$BNXCpVY3NzHTuRviCuLbFOXuwOogXAkBZwgweA0KkDIgKHYtD98my",
+      "firstName": "Mahabub",
+      "lastName": "Hossain",
+      "avatar": null,
+      "email": "contact@mahabub.me"
+    },
+    {
+      "id": "f545a9c1-61e9-42be-a0c5-b83244524c1f",
+      "password": "$2b$08$/l/OoxilWLYkSttC3cR9fOoYMc/RXqLLL0w5yERSuvftwUEYlGyEe",
+      "firstName": "Mahabub ",
+      "lastName": "Hossain",
+      "avatar": null,
+      "email": "pl@mahabub.me"
+    },
+    {
+      "id": "993fc38f-6696-47f2-a231-6430027bde69",
+      "password": "$2b$08$KAWSLLlwgtiTe4q7C2Fpmu2smwvcpxG7hTQdYLkl97Com4wDXRvUq",
+      "firstName": "Mahabub ",
+      "lastName": "Hossain",
+      "avatar": "uploads/avatar/avatar-1709748347476-912776336.png",
+      "email": "palashmahabub@gmail.com"
     }
   ]
 }
